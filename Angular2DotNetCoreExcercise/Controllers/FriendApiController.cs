@@ -85,5 +85,42 @@ namespace Angular2DotNetCoreExcercise.Controllers
 
             return friends;
         }
+
+        [HttpGet]
+        [Route("Details")]
+        public IEnumerable<FriendDetails> GetFriendDetails()
+        {
+            var friendDetails = new List<FriendDetails>()
+            {
+                new FriendDetails
+                {
+                    FriendDetailId = 1,
+                    FriendId = 1,
+                    Major = "Computer Science",
+                    Year = "First Year",
+                    Term = "First Term",
+                    Grade = "A"
+                },
+                new FriendDetails
+                {
+                    FriendDetailId = 2,
+                    FriendId = 1,
+                    Major = "Computer Science",
+                    Year = "First Year",
+                    Term = "Second Term",
+                    Grade = "B"
+                },
+                new FriendDetails
+                {
+                    FriendDetailId = 3,
+                    FriendId = 1,
+                    Major = "Computer Science",
+                    Year = "Second Year",
+                    Term = "First Term",
+                    Grade = "C"
+                },
+            };
+            return friendDetails;    
+        }
     }
 }
