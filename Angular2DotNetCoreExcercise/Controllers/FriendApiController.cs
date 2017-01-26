@@ -36,6 +36,50 @@ namespace Angular2DotNetCoreExcercise.Controllers
                     PostalCode = "90010",
                     Country = "USA",
                     Notes = "Really awesome cool friend"
+                },
+                new Data.Friend {
+                    FriendId = 2,
+                    FirstName = "Veranda",
+                    LastName = "Billbong",
+                    Email = "vbillbong@example",
+                    Address = "21332 Solar Blvd",
+                    City = "Torrance",
+                    PostalCode = "90324",
+                    Country = "USA",
+                    Notes = "Really awesome cool friend"
+                },
+                new Data.Friend {
+                    FriendId = 3,
+                    FirstName = "Gon",
+                    LastName = "Gondola",
+                    Email = "ggondola@example",
+                    Address = "3321 Wilshire Blvd",
+                    City = "Los Angeles",
+                    PostalCode = "90023",
+                    Country = "USA",
+                    Notes = "Really awesome cool friend"
+                },
+                new Data.Friend {
+                    FriendId = 4,
+                    FirstName = "Brandon",
+                    LastName = "Bratt",
+                    Email = "bbratt@example",
+                    Address = "231 Wilshire Blvd",
+                    City = "Los Angeles",
+                    PostalCode = "90010",
+                    Country = "USA",
+                    Notes = "Really awesome cool friend"
+                },
+                new Data.Friend {
+                    FriendId = 5,
+                    FirstName = "Sonia",
+                    LastName = "Sorenstam",
+                    Email = "ssorenstam@example",
+                    Address = "3 Via Sol Drive",
+                    City = "Los Angeles",
+                    PostalCode = "90732",
+                    Country = "USA",
+                    Notes = "Really awesome cool friend"
                 }
             };
 
