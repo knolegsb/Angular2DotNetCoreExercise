@@ -8,9 +8,11 @@ import { Http } from '@angular/http';
 
 export class FriendsComponent {
     public friend: Friend[] = [];
-    public frienddetials: FriendDetails[] = [];
+    public frienddetails: FriendDetails[] = [];
 
     myName: string;
+    activeRow: string = "0";
+
     constructor(public http: Http) {
         this.myName = "Shawn";
         //http.get('/api/friendapi/Friend').subscribe(result => {
@@ -24,8 +26,12 @@ export class FriendsComponent {
             this.friend = result.json();
         });
     }
-
-
+    getFriendDetails(friendId) {
+        this.http.get('/api/friendapi/Details/' + friendId).subscribe(result => {
+            this.frienddetails = result.json();
+        });
+        this.activeRow = friendId;
+    }
 }
 
 export interface Friend {
